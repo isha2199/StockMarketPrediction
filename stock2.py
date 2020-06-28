@@ -116,14 +116,6 @@ confidencepoly2 = clfpoly2.score(X_test,y_test)
 confidencepoly3 = clfpoly3.score(X_test,y_test)
 confidenceknn = clfknn.score(X_test, y_test)
 
-"""
-# results
-('The linear regression confidence is ', 0.96399641826551985)
-('The quadratic regression 2 confidence is ', 0.96492624557970319)
-('The quadratic regression 3 confidence is ', 0.9652082834532858)
-('The knn regression confidence is ', 0.92844658034790639)
-"""
-
 knn = KNeighborsRegressor()
 knn.fit(X, y)
 forecast_set = knn.predict(X_lately)
